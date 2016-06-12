@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="small-12 columns trainer">
+  	<div *ngIf="trainer">
+  		<h3>{{trainer.name}} Details</h3>
+  		<div class="trainerId">
+  			<label for="trainerId">ID: </label>
+  			<span>{{trainer.id}}</span>
+  		</div>
+    	<div class="trainerName">
+    		<label for="trainerName">Name: </label>
+    		<input [(ngModel)]="trainer.name" placeholder="Trainer" name="trainerName" />
+    	</div>
+    </div>
+	</div>
+	<button (click)="goBack()" class="back">Back</button>
+  <button (click)="save()" class="save primary">Save</button>
+</div>

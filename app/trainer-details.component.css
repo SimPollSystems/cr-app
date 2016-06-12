@@ -1,0 +1,35 @@
+label {
+	margin: .25em;
+}
+.trainerId {
+	padding: .5em;
+}
+.trainerName {
+	padding: .5em;
+}
+input {
+	color: #80b9ff;
+	padding: .25em;
+	border-radius: .5em;
+}
+button.back,
+button.save {
+  background: rgba(150,190,255,0.5);
+  padding: 1em;
+  margin: .25em;
+  border-radius: .25em;
+  text-align: center;
+  box-shadow: 0 1em 2em rgba(0,0,0,.3);
+  cursor: pointer;
+  transition: all .2s;
+}
+button.save {
+	background: rgba(150,255,170,0.5);
+}
+button.back:hover,
+button.save:hover {
+  background: rgba(150,190,255,0.8);
+}
+button.save:hover {
+	background: rgba(150,255,170,0.8);
+}

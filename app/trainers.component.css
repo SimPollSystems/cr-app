@@ -1,0 +1,60 @@
+ul.trainers {
+	padding: 0;
+}
+li.trainer {
+  background: #f6f6f6;
+  list-style-type: none;
+  border-radius: .5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+li.trainer.selected {
+	background: #DEF;
+}
+li.trainer.selected span.badge {
+	background: #9BD;
+	color: #FFF;
+}
+li.trainer span {
+	display: inline-block;
+}
+li.trainer span.badge {
+  background: #AcF;
+  border-radius: .25em;
+  color: #FFF;
+  margin-right: 1em;
+  padding: 1em;
+  font-weight: bold;
+  text-align: left;
+}
+li.trainer span.name {
+	color: #80b9ff;
+}
+li.trainer button {
+  opacity: 1;
+  background: rgba(255,130,130,.8);
+  padding: 1.25em;
+  color: #efefef;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  transition: all 0.2s;
+}
+li.trainer button:hover {
+  background: rgba(255,130,130,1);
+}
+button.add {
+  background: rgba(150,255,170,0.5);
+  padding: 1em;
+  margin: .25em;
+  border-radius: .25em;
+  text-align: center;
+  box-shadow: 0 1em 2em rgba(0,0,0,.3);
+  cursor: pointer;
+  transition: all .2s;
+}
+button.add:hover {
+  background: rgba(150,255,170,0.75);
+}

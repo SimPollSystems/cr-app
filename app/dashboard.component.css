@@ -1,0 +1,13 @@
+div.trainer {
+	background: rgba(150,190,255,0.3);
+	padding: 2em;
+	margin: 1em;
+	border-radius: 2em;
+	text-align: center;
+	box-shadow: 0 1em 2em rgba(0,0,0,.3);
+	cursor: pointer;
+	transition: all .2s;
+}
+div.trainer:hover {
+	background: rgba(150,190,255,0.7);
+}

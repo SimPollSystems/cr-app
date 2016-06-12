@@ -1,0 +1,32 @@
+<div class="row">
+	<div class="small-12 columns">
+		<h2>Our Trainers</h2>
+	</div>
+	<div class="column small-12 medium-8 large-5">
+		<button (click)="addTrainer()" class="add">Add Trainer</button>
+  	<ul class="trainers">
+  		<li *ngFor="let trainer of trainers"
+  			class="trainer"
+  			[class.selected]="trainer === selectedTrainer" 
+  			(click)="onSelect(trainer)">
+  				<span class="badge">{{trainer.id}}</span>
+  				<span class="name">{{trainer.name}}</span>
+          <button class="delete" (click)="delete(trainer, $event)">Delete</button>
+  		</li>
+  	</ul>
+	</div>
+
+  <div *ngIf="selectedTrainer" class="column small-12 medium-4 large-7 text-center">
+    <h2>
+      {{selectedTrainer.name | uppercase}} is my hero
+    </h2>
+    <button class="back" (click)="gotoDetails()">View Details</button>
+  </div>  
+
+  
+  <div *ngIf="addingTrainer">
+    <trainer-details (close)="close($event)"></trainer-details>
+  </div>
+
+
+</div>
